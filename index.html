@@ -31,11 +31,11 @@
         </a>
 
         <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-stone-700">
+        <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-stone-700">
           <a href="#about" class="hover:text-amber-700 transition">आश्रम परिचय</a>
+          <a href="#founder" class="hover:text-amber-700 transition">मेरा परिचय (संस्थापक)</a>
           <a href="#services" class="hover:text-amber-700 transition">सेवा कार्य</a>
           <a href="#construction" class="hover:text-amber-700 transition">भव्य निर्माण (100 Cr)</a>
-          <a href="#founder" class="hover:text-amber-700 transition">संस्थापक</a>
           <a href="#donate" class="hover:text-amber-700 transition">सहयोग / दान</a>
           <a href="#contact" class="hover:text-amber-700 transition">संपर्क</a>
         </nav>
@@ -57,9 +57,9 @@
     <!-- Mobile Navigation Dropdown -->
     <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-amber-100 px-4 pt-2 pb-4 space-y-3 text-sm font-medium">
       <a href="#about" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">आश्रम परिचय</a>
+      <a href="#founder" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">मेरा परिचय (संस्थापक)</a>
       <a href="#services" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">सेवा कार्य</a>
       <a href="#construction" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">भव्य निर्माण (100 Cr)</a>
-      <a href="#founder" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">संस्थापक</a>
       <a href="#donate" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">सहयोग / दान</a>
       <a href="#contact" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">संपर्क</a>
       <a href="#donate" onclick="toggleMobileMenu()" class="inline-block w-full text-center trust-gradient text-white py-2 rounded-lg font-bold">सहयोग करें</a>
@@ -81,17 +81,17 @@
       </p>
 
       <div class="mt-10 flex flex-wrap justify-center gap-4">
-        <a href="#construction" class="bg-amber-500 hover:bg-amber-600 text-stone-950 font-bold px-8 py-3.5 rounded-full shadow-lg transition flex items-center gap-2 text-sm sm:text-base">
-          <i class="fa-solid fa-trowel-bricks"></i> 100 करोड़ आश्रम निर्माण प्रकल्प
+        <a href="#founder" class="bg-amber-500 hover:bg-amber-600 text-stone-950 font-bold px-7 py-3.5 rounded-full shadow-lg transition flex items-center gap-2 text-sm sm:text-base">
+          <i class="fa-solid fa-book-open-reader"></i> संस्थापक परिचय पढ़ें
         </a>
-        <a href="#donate" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-3.5 rounded-full backdrop-blur transition text-sm sm:text-base">
-          सहयोग एवं दान विवरण
+        <a href="#construction" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-7 py-3.5 rounded-full backdrop-blur transition text-sm sm:text-base">
+          100 करोड़ निर्माण प्रकल्प
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ================= INTRODUCTION / SANSHODHAN ================= -->
+  <!-- ================= ABOUT ASHRAM ================= -->
   <section id="about" class="py-16 sm:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -117,9 +117,9 @@
         <div class="relative">
           <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-100 bg-amber-900 p-8 text-center text-white">
             <i class="fa-solid fa-hands-praying text-6xl text-amber-400 mb-4"></i>
-            <h3 class="text-2xl font-serif font-bold mb-2">हमारा पवित्र संकल्प</h3>
+            <h3 class="text-2xl font-serif font-bold mb-2">हमारा पावन ध्येय</h3>
             <p class="text-amber-100 text-sm leading-relaxed max-w-md mx-auto">
-              मानवता की रक्षा, निराश्रितों को संबल, गौमाता का संरक्षण और सनातन संस्कारों से युक्त एक समृद्ध व संवेदनशील समाज का निर्माण।
+              मानवता की रक्षा, असहायों को संबल, गौमाता का संरक्षण और सनातन संस्कारों से युक्त एक समृद्ध व संवेदनशील समाज का निर्माण।
             </p>
             <div class="mt-6 inline-flex items-center gap-2 text-xs bg-white/10 px-4 py-2 rounded-full border border-white/20">
               <span>संस्थापक: श्री अनिल</span> • <span>संस्थान: वेदायन आश्रम</span>
@@ -127,6 +127,81 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ================= DETAILED FOUNDER PROFILE ================= -->
+  <section id="founder" class="py-16 sm:py-24 bg-gradient-to-b from-amber-50/70 to-white border-t border-amber-100">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="inline-block bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
+          📖 मेरा परिचय
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-serif text-stone-900">
+          सेवा और समर्पण का दो दशकों का सफर
+        </h2>
+        <p class="text-amber-700 font-medium text-sm mt-1">— अनिल (संस्थापक, वेदायन ट्रस्ट)</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-xl border border-amber-200 overflow-hidden">
+        
+        <!-- Quote Banner -->
+        <div class="bg-amber-900 text-amber-100 p-6 sm:p-8 text-center border-b border-amber-800">
+          <i class="fa-solid fa-quote-left text-amber-400 text-3xl mb-2 block opacity-60"></i>
+          <p class="text-lg sm:text-xl font-serif font-bold text-white leading-relaxed max-w-3xl mx-auto">
+            "जीवन केवल अपने लिए जीने का नाम नहीं है, बल्कि दूसरों के चेहरों पर मुस्कान लाना और निष्काम भाव से मानवता की सेवा करना ही असली जीवन है। सेवा ही सबसे बड़ा धर्म है, और गौसेवा तथा इंसानियत की सुवास से ही जीवन सार्थक होता है।"
+          </p>
+        </div>
+
+        <div class="p-6 sm:p-10 space-y-8">
+          
+          <!-- Milestone 1 -->
+          <div class="flex flex-col sm:flex-row gap-5 items-start">
+            <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl shrink-0">
+              <i class="fa-solid fa-cow"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold font-serif text-stone-900">दो दशकों का सेवाकाल और गौसेवा</h3>
+              <p class="mt-2 text-stone-600 text-sm leading-relaxed">
+                पिछले 20 वर्षों से अधिक समय से मैंने अपना जीवन गौसेवा और विभिन्न सामाजिक ट्रस्टों के माध्यम से समाज कल्याण के लिए समर्पित कर दिया है। इन दो दशकों में मैंने न केवल सेवा के असल अर्थ को गहराई से समझा है, बल्कि इसे अपने आचरण में उतारा भी है। गौमाता की सेवा करते हुए बिताया गया हर एक पल मेरे लिए किसी साधना से कम नहीं रहा है।
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="flex flex-col sm:flex-row gap-5 items-start border-t border-amber-100 pt-6">
+            <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl shrink-0">
+              <i class="fa-solid fa-hands-praying"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold font-serif text-stone-900">स्वामी रामदेव जी और संतों का सान्निध्य</h3>
+              <p class="mt-2 text-stone-600 text-sm leading-relaxed">
+                अपने इस लंबे आध्यात्मिक और सेवा के मार्ग पर मुझे देश के प्रख्यात <strong>स्वामी रामदेव जी</strong> के सान्निध्य में रहकर सेवा कार्य करने का सौभाग्य प्राप्त हुआ। इसके साथ ही, आदरणीय <strong>देवी चित्रलेखा जी</strong>, और कई अन्य पूज्य महानुभावों व निष्ठावान सेवादारों के साथ बिताया गया समय मेरे जीवन की सबसे अनमोल पूंजी है। उनके मार्गदर्शन और आशीर्वाद ने मेरे भीतर सेवा के भाव को और अधिक दृढ़ बनाया है।
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="flex flex-col sm:flex-row gap-5 items-start border-t border-amber-100 pt-6">
+            <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl shrink-0">
+              <i class="fa-solid fa-landmark"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold font-serif text-stone-900">वेदायन ट्रस्ट की स्थापना और हमारा संकल्प</h3>
+              <p class="mt-2 text-stone-600 text-sm leading-relaxed">
+                पिछले दो दशकों के इन्हीं अमूल्य अनुभवों, सीख और संतों के आशीर्वाद को संजोते हुए, मैंने <strong>'वेदायन ट्रस्ट'</strong> की स्थापना की है। यह संस्था केवल एक नाम नहीं, बल्कि समाज के हर शोषित, वंचित, यात्रियों और जरूरतमंदों के प्रति हमारे समर्पण का जीवंत प्रतीक है। यहाँ गौसंरक्षण और भारतीय संस्कारों के प्रसार को सर्वोपरि रखा गया है।
+              </p>
+              <div class="mt-4 p-4 rounded-xl bg-amber-50 border border-amber-200 text-amber-950 text-xs sm:text-sm font-semibold">
+                ✨ "मेरी तकनीकी दक्षता और 20 वर्षों का धरातलीय सेवा अनुभव—इन दोनों का अनूठा संगम ही आज 'वेदायन ट्रस्ट' के रूप में आकार ले चुका है। आइए, इस पावन और नेक अभियान से जुड़कर मानवता के इस पवित्र सफर को मिलकर नए आयाम दें!"
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
   </section>
 
@@ -301,24 +376,6 @@
     </div>
   </section>
 
-  <!-- ================= FOUNDER SECTION ================= -->
-  <section id="founder" class="py-16 sm:py-20 bg-amber-50/40 border-t border-amber-100">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <span class="text-amber-800 font-bold text-xs uppercase tracking-widest block mb-2">मार्गदर्शन एवं नेतृत्व</span>
-      <h2 class="text-3xl font-bold font-serif text-stone-900">संस्थापक परिचय</h2>
-      <div class="mt-6 p-6 sm:p-8 bg-white rounded-2xl border border-amber-200 shadow-sm max-w-2xl mx-auto">
-        <div class="w-20 h-20 rounded-full trust-gradient text-white flex items-center justify-center text-3xl mx-auto mb-4 shadow">
-          <i class="fa-solid fa-user-tie"></i>
-        </div>
-        <h3 class="text-2xl font-bold font-serif text-stone-900">श्री अनिल</h3>
-        <p class="text-xs font-semibold text-amber-700 uppercase tracking-widest mt-0.5">संस्थापक, वेदायन ट्रस्ट (Vedayan Trust)</p>
-        <p class="mt-4 text-stone-600 text-sm leading-relaxed">
-          दो दशकों से अधिक के निरंतर जनसेवा, संत कृपा और सनातन सेवा भावना से ओत-प्रोत होकर श्री अनिल जी के नेतृत्व में वेदायन ट्रस्ट निर्धन, यात्री और गौसेवा के महान मिशन को साकार कर रहा है।
-        </p>
-      </div>
-    </div>
-  </section>
-
   <!-- ================= DONATION / SAHAYOG SECTION ================= -->
   <section id="donate" class="py-16 sm:py-24 bg-white border-t border-amber-100">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -372,7 +429,7 @@
               UPI ID: vedayantrust@upi
             </div>
             <p class="text-[11px] text-stone-500 mt-2">
-              GPay, PhonePe, Paytm ya kisi bhi UPI app se scan karein.
+              GPay, PhonePe, Paytm या किसी भी UPI ऐप से स्कैन करें।
             </p>
           </div>
 
