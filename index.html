@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>वेदायन ट्रस्ट | Vedayan Trust - सेवा, संस्कार एवं सशक्तिकरण</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .trust-gradient {
+      background: linear-gradient(135deg, #7c2d12 0%, #b45309 50%, #f59e0b 100%);
+    }
+  </style>
+</head>
+<body class="bg-amber-50/30 text-stone-800 font-sans antialiased">
+
+  <!-- ================= TOP HEADER / NAVBAR ================= -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-amber-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Logo & Branding -->
+        <a href="#home" class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-full trust-gradient flex items-center justify-center text-white text-2xl shadow-md">
+            <i class="fa-solid fa-hands-holding-child"></i>
+          </div>
+          <div>
+            <span class="block text-xl sm:text-2xl font-bold tracking-tight text-amber-950 font-serif">वेदायन ट्रस्ट</span>
+            <span class="block text-xs uppercase tracking-widest text-amber-700 font-medium">Vedayan Trust</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-stone-700">
+          <a href="#about" class="hover:text-amber-700 transition">हमारे बारे में</a>
+          <a href="#initiatives" class="hover:text-amber-700 transition">कार्य एवं पहल</a>
+          <a href="#impact" class="hover:text-amber-700 transition">प्रभाव (Impact)</a>
+          <a href="#donate" class="hover:text-amber-700 transition">सहयोग / दान</a>
+          <a href="#contact" class="hover:text-amber-700 transition">संपर्क</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="#donate" class="trust-gradient text-white px-5 py-2.5 rounded-full text-sm font-bold shadow hover:opacity-95 transition flex items-center gap-2">
+            <i class="fa-solid fa-heart text-amber-200"></i> दान करें (Donate)
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button onclick="toggleMobileMenu()" class="md:hidden text-stone-700 hover:text-amber-800 text-2xl p-2">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-amber-100 px-4 pt-2 pb-4 space-y-3 text-sm font-medium">
+      <a href="#about" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">हमारे बारे में</a>
+      <a href="#initiatives" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">कार्य एवं पहल</a>
+      <a href="#impact" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">प्रभाव (Impact)</a>
+      <a href="#donate" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">सहयोग / दान</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">संपर्क</a>
+      <a href="#donate" onclick="toggleMobileMenu()" class="inline-block w-full text-center trust-gradient text-white py-2 rounded-lg font-bold">दान करें</a>
+    </div>
+  </header>
+
+  <!-- ================= HERO BANNER ================= -->
+  <section id="home" class="relative overflow-hidden bg-amber-950 text-white py-20 lg:py-28">
+    <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <span class="inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 border border-amber-400/30 px-4 py-1 rounded-full text-xs sm:text-sm font-semibold uppercase tracking-wider mb-6">
+        <i class="fa-solid fa-om"></i> निस्वार्थ सेवा • सामाजिक संस्कार • उज्ज्वल भविष्य
+      </span>
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-serif max-w-4xl mx-auto leading-tight">
+        सशक्त समाज, शिक्षित भविष्य और मानवता की निरंतर सेवा
+      </h1>
+      <p class="mt-6 text-base sm:text-lg text-amber-100/90 max-w-2xl mx-auto leading-relaxed">
+        वेदायन ट्रस्ट (Vedayan Trust) जरूरतमंदों की सहायता, युवा मार्गदर्शन, बाल शिक्षा एवं सामाजिक उत्थान के लिए समर्पित एक गैर-लाभकारी संगठन है।
+      </p>
+
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+        <a href="#donate" class="bg-amber-500 hover:bg-amber-600 text-stone-950 font-bold px-8 py-3.5 rounded-full shadow-lg transition flex items-center gap-2 text-sm sm:text-base">
+          <i class="fa-solid fa-hand-holding-heart"></i> सहयोग करें (Support Us)
+        </a>
+        <a href="#initiatives" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-3.5 rounded-full backdrop-blur transition text-sm sm:text-base">
+          हमारी पहल देखें
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= IMPACT HIGHLIGHTS ================= -->
+  <section id="impact" class="py-12 bg-amber-900 text-white border-y border-amber-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-4">
+          <div class="text-3xl sm:text-4xl font-extrabold text-amber-300">1,500+</div>
+          <div class="text-xs sm:text-sm text-amber-100 mt-1">सहायता प्राप्त विद्यार्थी</div>
+        </div>
+        <div class="p-4">
+          <div class="text-3xl sm:text-4xl font-extrabold text-amber-300">50+</div>
+          <div class="text-xs sm:text-sm text-amber-100 mt-1">निःशुल्क स्वास्थ्य एवं अन्नदान शिविर</div>
+        </div>
+        <div class="p-4">
+          <div class="text-3xl sm:text-4xl font-extrabold text-amber-300">300+</div>
+          <div class="text-xs sm:text-sm text-amber-100 mt-1">सशक्त एवं स्वावलंबी महिलाएं</div>
+        </div>
+        <div class="p-4">
+          <div class="text-3xl sm:text-4xl font-extrabold text-amber-300">100%</div>
+          <div class="text-xs sm:text-sm text-amber-100 mt-1">पारदर्शिता एवं समर्पण</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT US ================= -->
+  <section id="about" class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-amber-800 font-bold text-xs uppercase tracking-widest block mb-2">हमारा परिचय</span>
+          <h2 class="text-3xl sm:text-4xl font-bold font-serif text-stone-900 leading-snug">
+            प्राचीन संस्कारों और आधुनिक शिक्षा के समन्वय से समाज निर्माण
+          </h2>
+          <p class="mt-4 text-stone-600 leading-relaxed">
+            <strong>वेदायन ट्रस्ट</strong> की स्थापना का मूल ध्येय समाज के अंतिम पंक्ति में खड़े व्यक्ति तक सहायता पहुंचाना और भावी पीढ़ी को नैतिक मूल्यों के साथ आधुनिक ज्ञान-विज्ञान से जोड़ना है।
+          </p>
+          <p class="mt-3 text-stone-600 leading-relaxed">
+            हम मानते हैं कि जब किसी परिवार के बच्चे को शिक्षा और पोषण मिलता है, तो वह केवल एक व्यक्ति का नहीं, बल्कि संपूर्ण समाज के उत्थान की नींव बनती है।
+          </p>
+
+          <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="flex items-start gap-3 bg-amber-50/60 p-4 rounded-xl border border-amber-100">
+              <i class="fa-solid fa-certificate text-amber-700 text-xl mt-1"></i>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">पंजीकृत ट्रस्ट</h4>
+                <p class="text-xs text-stone-600 mt-0.5">पूर्णतः वैधानिक नियमों के तहत संचालित व पारदर्शी।</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 bg-amber-50/60 p-4 rounded-xl border border-amber-100">
+              <i class="fa-solid fa-users-gear text-amber-700 text-xl mt-1"></i>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">जमीनी स्तर पर कार्य</h4>
+                <p class="text-xs text-stone-600 mt-0.5">सीधे जरूरतमंदों तक राहत और संसाधन वितरण।</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-100 bg-amber-900 aspect-video sm:aspect-4/3 flex items-center justify-center text-amber-200">
+            <!-- Trust Main Graphic / Image Placeholder -->
+            <div class="text-center p-8">
+              <i class="fa-solid fa-hands-holding-circle text-7xl text-amber-400 mb-4"></i>
+              <h3 class="text-2xl font-serif font-bold text-white">वेदायन ट्रस्ट</h3>
+              <p class="text-xs text-amber-200 mt-2 max-w-sm">"परोपकाराय फलन्ति वृक्षाः परोपकाराय वहन्ति नद्यः"<br>सेवा ही हमारा संकल्प है।</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= KEY INITIATIVES ================= -->
+  <section id="initiatives" class="py-16 sm:py-24 bg-amber-50/50 border-t border-amber-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="text-amber-800 font-bold text-xs uppercase tracking-widest">मुख्य सेवा कार्य</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-serif text-stone-900 mt-2">हमारे प्रमुख प्रकल्प एवं पहल</h2>
+        <p class="mt-3 text-stone-600 text-sm sm:text-base">
+          वेदायन ट्रस्ट विभिन्न क्षेत्रों में सक्रिय रूप से समाज सेवा के कार्य संचालित करता है।
+        </p>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Initiative 1: Shiksha -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition border border-amber-100 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3 class="text-xl font-bold text-stone-900 font-serif">शिक्षा संवर्धन प्रकल्प</h3>
+            <p class="mt-3 text-stone-600 text-sm leading-relaxed">
+              आर्थिक रूप से कमजोर बच्चों को स्कूल फीस, किताबें, यूनिफॉर्म और प्रतियोगी परीक्षाओं के लिए निःशुल्क कोचिंग व मार्गदर्शन।
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-amber-50 text-xs font-semibold text-amber-800">
+            बाल शिक्षा एवं कौशल विकास
+          </div>
+        </div>
+
+        <!-- Initiative 2: Swasthya -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition border border-amber-100 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3 class="text-xl font-bold text-stone-900 font-serif">आरोग्य एवं राहत सेवा</h3>
+            <p class="mt-3 text-stone-600 text-sm leading-relaxed">
+              समय-समय पर निःशुल्क स्वास्थ्य परीक्षण शिविर, दवा वितरण, रक्तदान शिविर तथा बुजुर्गों व असहायों के उपचार में आर्थिक मदद।
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-amber-50 text-xs font-semibold text-amber-800">
+            चिकित्सा एवं स्वास्थ्य जागरूकता
+          </div>
+        </div>
+
+        <!-- Initiative 3: Sanskar & Swavalamban -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition border border-amber-100 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+            <h3 class="text-xl font-bold text-stone-900 font-serif">स्वावलंबन व पर्यावरण</h3>
+            <p class="mt-3 text-stone-600 text-sm leading-relaxed">
+              महिलाओं के लिए सिलाई एवं हस्तकला प्रशिक्षण, पौधारोपण अभियान और भारतीय सांस्कृतिक मूल्यों का संरक्षण एवं संवर्धन।
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-amber-50 text-xs font-semibold text-amber-800">
+            आत्मनिर्भरता एवं प्रकृति सेवा
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DONATION & SUPPORT SECTION ================= -->
+  <section id="donate" class="py-16 sm:py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="trust-gradient rounded-3xl p-8 sm:p-12 text-white shadow-xl">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">सहयोग करें</span>
+          <h2 class="text-3xl sm:text-4xl font-bold font-serif mt-3">आपका एक सहयोग बदल सकता है किसी का जीवन</h2>
+          <p class="mt-3 text-amber-100 text-sm">
+            वेदायन ट्रस्ट में दिया गया आपका प्रत्येक योगदान सीधे जरूरतमंद बच्चों की शिक्षा, स्वास्थ्य और समाज कल्याण पर व्यय होता है।
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white/10 rounded-2xl p-6 sm:p-8 backdrop-blur border border-white/20">
+          
+          <!-- Bank Details -->
+          <div class="space-y-3 text-sm">
+            <h3 class="text-lg font-bold text-amber-200 border-b border-white/20 pb-2">
+              <i class="fa-solid fa-building-columns mr-2"></i> बैंक खाता विवरण (Bank Details)
+            </h3>
+            <div class="flex justify-between border-b border-white/10 py-1">
+              <span class="text-amber-100">खाता धारक (Account Name):</span>
+              <span class="font-bold">VEDAYAN TRUST</span>
+            </div>
+            <div class="flex justify-between border-b border-white/10 py-1">
+              <span class="text-amber-100">बैंक का नाम (Bank):</span>
+              <span class="font-bold">State Bank of India</span>
+            </div>
+            <div class="flex justify-between border-b border-white/10 py-1">
+              <span class="text-amber-100">खाता संख्या (A/C No):</span>
+              <span class="font-mono font-bold tracking-wider">XXXXXXXXXXXX</span>
+            </div>
+            <div class="flex justify-between border-b border-white/10 py-1">
+              <span class="text-amber-100">IFSC कोड:</span>
+              <span class="font-mono font-bold">SBIN00XXXXX</span>
+            </div>
+            <div class="flex justify-between py-1">
+              <span class="text-amber-100">शाखा (Branch):</span>
+              <span class="font-bold">Main Branch</span>
+            </div>
+          </div>
+
+          <!-- QR Code / UPI Details -->
+          <div class="bg-white text-stone-900 p-6 rounded-xl text-center shadow-inner">
+            <h4 class="font-bold text-stone-800 text-sm mb-2">UPI द्वारा त्वरित सहयोग</h4>
+            <div class="w-40 h-40 mx-auto bg-stone-100 border-2 border-dashed border-amber-400 rounded-lg flex flex-col items-center justify-center p-2 mb-3">
+              <i class="fa-solid fa-qrcode text-6xl text-stone-400 mb-1"></i>
+              <span class="text-[11px] text-stone-500 font-medium">[QR Code Placeholder]</span>
+            </div>
+            <div class="bg-amber-50 border border-amber-200 py-1.5 px-3 rounded-md text-xs font-mono font-bold text-amber-900 inline-block">
+              UPI ID: vedayantrust@upi
+            </div>
+            <p class="text-[11px] text-stone-500 mt-2">
+              GPay, PhonePe, Paytm ya kisi bhi UPI app se scan karein.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & GET INVOLVED ================= -->
+  <section id="contact" class="py-16 sm:py-24 bg-amber-50/40 border-t border-amber-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        
+        <!-- Contact Info -->
+        <div>
+          <span class="text-amber-800 font-bold text-xs uppercase tracking-widest block mb-2">संपर्क सूत्र</span>
+          <h2 class="text-3xl font-bold font-serif text-stone-900">वेदायन ट्रस्ट से जुड़ें</h2>
+          <p class="mt-3 text-stone-600 text-sm leading-relaxed">
+            यदि आप स्वयंसेवक (Volunteer) के रूप में जुड़ना चाहते हैं, किसी जरूरतमंद की सहायता हेतु सूचित करना चाहते हैं, या ट्रस्ट से संबंधित कोई जानकारी चाहते हैं, तो हमसे संपर्क करें।
+          </p>
+
+          <div class="mt-8 space-y-4 text-sm">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <strong class="block text-stone-900">कार्यालय पता:</strong>
+                <span class="text-stone-600">वेदायन ट्रस्ट कार्यालय, भारत</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <strong class="block text-stone-900">फ़ोन / व्हाट्सएप:</strong>
+                <span class="text-stone-600">+91 XXXXXXXXXX</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <strong class="block text-stone-900">ईमेल:</strong>
+                <span class="text-stone-600">info@vedayantrust.org</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-amber-100">
+          <h3 class="text-lg font-bold text-stone-900 mb-4 font-serif">संदेश या स्वयंसेवा हेतु आवेदन</h3>
+          <form onsubmit="handleFormSubmit(event)" class="space-y-4 text-sm">
+            <div>
+              <label class="block text-xs font-semibold text-stone-600 uppercase mb-1">आपका नाम *</label>
+              <input type="text" required placeholder="अपना पूरा नाम लिखें" class="w-full border border-stone-300 rounded-lg px-3 py-2 outline-none focus:border-amber-600">
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-stone-600 uppercase mb-1">मोबाइल नंबर *</label>
+                <input type="tel" required placeholder="10 अंकों का मोबाइल नंबर" class="w-full border border-stone-300 rounded-lg px-3 py-2 outline-none focus:border-amber-600">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-stone-600 uppercase mb-1">ईमेल</label>
+                <input type="email" placeholder="example@email.com" class="w-full border border-stone-300 rounded-lg px-3 py-2 outline-none focus:border-amber-600">
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-600 uppercase mb-1">आप किस प्रकार जुड़ना चाहते हैं?</label>
+              <select class="w-full border border-stone-300 rounded-lg px-3 py-2 outline-none focus:border-amber-600 bg-white">
+                <option value="volunteer">स्वयंसेवक (Volunteer) बनना चाहता हूँ</option>
+                <option value="donor">नियमित दान / सहयोग हेतु</option>
+                <option value="help_request">किसी सहायता या जानकारी के लिए</option>
+                <option value="other">अन्य</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-600 uppercase mb-1">संदेश</label>
+              <textarea rows="3" placeholder="अपना संदेश या सुझाव यहाँ लिखें..." class="w-full border border-stone-300 rounded-lg p-2.5 outline-none focus:border-amber-600"></textarea>
+            </div>
+            <button type="submit" class="w-full trust-gradient text-white font-bold py-3 rounded-lg shadow hover:opacity-95 transition">
+              संदेश भेजें (Submit)
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-stone-900 text-stone-400 text-xs py-10 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div class="flex items-center gap-2">
+          <span class="text-white font-bold font-serif text-sm">वेदायन ट्रस्ट (Vedayan Trust)</span>
+          <span>• सर्वाधिकार सुरक्षित।</span>
+        </div>
+        <div class="flex gap-4">
+          <a href="#home" class="hover:text-amber-400">होम</a>
+          <a href="#about" class="hover:text-amber-400">परिचय</a>
+          <a href="#donate" class="hover:text-amber-400">दान</a>
+          <a href="#contact" class="hover:text-amber-400">संपर्क</a>
+        </div>
+      </div>
+      <div class="text-center sm:text-left mt-4 text-stone-500 text-[11px]">
+        वेदायन ट्रस्ट समाज में नैतिक, शैक्षणिक और सामाजिक सुधार के लिए समर्पित एक पंजीकृत गैर-सरकारी संगठन (NGO/Trust) है।
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      alert("धन्यवाद! आपका संदेश प्राप्त हो गया है। वेदायन ट्रस्ट की टीम आपसे शीघ्र ही संपर्क करेगी।");
+      e.target.reset();
+    }
+  </script>
+
+</body>
+</html>
