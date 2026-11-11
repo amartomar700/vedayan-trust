@@ -21,7 +21,8 @@
         
         <!-- Logo & Branding -->
         <a href="#home" class="flex items-center gap-3">
-          <div class="w-12 h-12 rounded-full trust-gradient flex items-center justify-center text-white text-2xl shadow-md">
+          <div class="w-12 h-12 rounded-full trust-gradient flex items-center justify-center text-white text-2xl shadow-md overflow-hidden">
+            <!-- Logo image ho toh yahan lagayein: <img src="logo.png" class="w-full h-full object-cover"> -->
             <i class="fa-solid fa-hands-holding-child"></i>
           </div>
           <div>
@@ -35,6 +36,7 @@
           <a href="#about" class="hover:text-amber-700 transition">आश्रम परिचय</a>
           <a href="#founder" class="hover:text-amber-700 transition">मेरा परिचय (संस्थापक)</a>
           <a href="#services" class="hover:text-amber-700 transition">सेवा कार्य</a>
+          <a href="#gallery" class="hover:text-amber-700 transition">तस्वीरें (Gallery)</a>
           <a href="#construction" class="hover:text-amber-700 transition">भव्य निर्माण (100 Cr)</a>
           <a href="#donate" class="hover:text-amber-700 transition">सहयोग / दान</a>
           <a href="#contact" class="hover:text-amber-700 transition">संपर्क</a>
@@ -59,6 +61,7 @@
       <a href="#about" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">आश्रम परिचय</a>
       <a href="#founder" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">मेरा परिचय (संस्थापक)</a>
       <a href="#services" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">सेवा कार्य</a>
+      <a href="#gallery" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">तस्वीरें (Gallery)</a>
       <a href="#construction" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">भव्य निर्माण (100 Cr)</a>
       <a href="#donate" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">सहयोग / दान</a>
       <a href="#contact" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">संपर्क</a>
@@ -84,8 +87,8 @@
         <a href="#founder" class="bg-amber-500 hover:bg-amber-600 text-stone-950 font-bold px-7 py-3.5 rounded-full shadow-lg transition flex items-center gap-2 text-sm sm:text-base">
           <i class="fa-solid fa-book-open-reader"></i> संस्थापक परिचय पढ़ें
         </a>
-        <a href="#construction" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-7 py-3.5 rounded-full backdrop-blur transition text-sm sm:text-base">
-          100 करोड़ निर्माण प्रकल्प
+        <a href="#gallery" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-7 py-3.5 rounded-full backdrop-blur transition text-sm sm:text-base">
+          आश्रम की झलकियाँ देखें
         </a>
       </div>
     </div>
@@ -115,15 +118,9 @@
         </div>
 
         <div class="relative">
-          <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-100 bg-amber-900 p-8 text-center text-white">
-            <i class="fa-solid fa-hands-praying text-6xl text-amber-400 mb-4"></i>
-            <h3 class="text-2xl font-serif font-bold mb-2">हमारा पावन ध्येय</h3>
-            <p class="text-amber-100 text-sm leading-relaxed max-w-md mx-auto">
-              मानवता की रक्षा, असहायों को संबल, गौमाता का संरक्षण और सनातन संस्कारों से युक्त एक समृद्ध व संवेदनशील समाज का निर्माण।
-            </p>
-            <div class="mt-6 inline-flex items-center gap-2 text-xs bg-white/10 px-4 py-2 rounded-full border border-white/20">
-              <span>संस्थापक: श्री अनिल</span> • <span>संस्थान: वेदायन आश्रम</span>
-            </div>
+          <!-- ABOUT IMAGE CONTAINER -->
+          <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-amber-100 bg-amber-900 aspect-4/3 flex items-center justify-center relative group">
+            <img src="ashram-main.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-8 text-white\'><i class=\'fa-solid fa-hands-praying text-6xl text-amber-400 mb-4\'></i><h3 class=\'text-2xl font-serif font-bold\'>वेदायन आश्रम परिसर</h3><p class=\'text-amber-100 text-xs mt-2\'>Photo upload karein: ashram-main.jpg</p></div>';" alt="वेदायन आश्रम" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           </div>
         </div>
       </div>
@@ -146,12 +143,21 @@
 
       <div class="bg-white rounded-3xl shadow-xl border border-amber-200 overflow-hidden">
         
-        <!-- Quote Banner -->
-        <div class="bg-amber-900 text-amber-100 p-6 sm:p-8 text-center border-b border-amber-800">
-          <i class="fa-solid fa-quote-left text-amber-400 text-3xl mb-2 block opacity-60"></i>
-          <p class="text-lg sm:text-xl font-serif font-bold text-white leading-relaxed max-w-3xl mx-auto">
-            "जीवन केवल अपने लिए जीने का नाम नहीं है, बल्कि दूसरों के चेहरों पर मुस्कान लाना और निष्काम भाव से मानवता की सेवा करना ही असली जीवन है। सेवा ही सबसे बड़ा धर्म है, और गौसेवा तथा इंसानियत की सुवास से ही जीवन सार्थक होता है।"
-          </p>
+        <!-- Top Banner with Founder Photo -->
+        <div class="bg-amber-900 text-amber-100 p-6 sm:p-10 flex flex-col sm:flex-row items-center gap-6 border-b border-amber-800">
+          
+          <!-- FOUNDER PHOTO -->
+          <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-amber-400/80 shadow-2xl overflow-hidden shrink-0 bg-amber-950 flex items-center justify-center">
+            <img src="anil-founder.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-user-tie text-5xl text-amber-300\'></i>';" alt="श्री अनिल - संस्थापक" class="w-full h-full object-cover">
+          </div>
+
+          <div class="text-center sm:text-left space-y-2">
+            <i class="fa-solid fa-quote-left text-amber-400 text-2xl block opacity-60"></i>
+            <p class="text-base sm:text-lg font-serif font-bold text-white leading-relaxed">
+              "जीवन केवल अपने लिए जीने का नाम नहीं है, बल्कि दूसरों के चेहरों पर मुस्कान लाना और निष्काम भाव से मानवता की सेवा करना ही असली जीवन है। सेवा ही सबसे बड़ा धर्म है, और गौसेवा तथा इंसानियत की सुवास से ही जीवन सार्थक होता है।"
+            </p>
+            <span class="block text-xs uppercase tracking-widest text-amber-300 font-semibold">— श्री अनिल</span>
+          </div>
         </div>
 
         <div class="p-6 sm:p-10 space-y-8">
@@ -205,89 +211,93 @@
     </div>
   </section>
 
-  <!-- ================= CORE SERVICES ================= -->
-  <section id="services" class="py-16 sm:py-24 bg-amber-50/50 border-t border-amber-100">
+  <!-- ================= PHOTO GALLERY SECTION ================= -->
+  <section id="gallery" class="py-16 sm:py-24 bg-white border-t border-amber-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-14">
-        <span class="text-amber-800 font-bold text-xs uppercase tracking-widest">निःस्वार्थ सेवा प्रकल्प</span>
-        <h2 class="text-3xl sm:text-4xl font-bold font-serif text-stone-900 mt-2">वेदायन आश्रम की प्रमुख सेवाएँ</h2>
+        <span class="text-amber-800 font-bold text-xs uppercase tracking-widest">सेवा और आश्रम की झलकियाँ</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-serif text-stone-900 mt-2">तस्वीरें (Photo Gallery)</h2>
         <p class="mt-3 text-stone-600 text-sm sm:text-base">
-          यह संस्था समाज के हर वर्ग की भलाई के लिए निष्काम भाव से निरंतर कई सेवा कार्य कर रही है:
+          गौसेवा, अन्नदान, संतों के सान्निध्य एवं आश्रम के पवित्र सेवा कार्यों के कुछ दृश्य:
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- 6 Photo Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        <!-- 1. Yatri Niwas -->
-        <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition border border-amber-100 flex flex-col justify-between">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl mb-4">
-              <i class="fa-solid fa-hotel"></i>
-            </div>
-            <h3 class="text-lg font-bold text-stone-900 font-serif">आश्रम एवं यात्री निवास</h3>
-            <p class="mt-3 text-stone-600 text-xs sm:text-sm leading-relaxed">
-              दूर-दराज से आने वाले यात्रियों, संतों और जरूरतमंदों के लिए सुरक्षित, सरल और आरामदायक ठहरने की उत्तम व्यवस्था। यहाँ आने वाले हर अतिथि को अपनापन और शांति का अनुभव होता है।
-            </p>
+        <!-- Photo 1: Gau Sewa -->
+        <div class="rounded-2xl overflow-hidden border border-amber-200 shadow-sm group bg-amber-50">
+          <div class="h-60 overflow-hidden relative">
+            <img src="gausewa.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full bg-amber-800 flex items-center justify-center text-amber-200\'><i class=\'fa-solid fa-cow text-5xl\'></i></div>';" alt="गौसेवा आश्रम" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           </div>
-          <div class="mt-4 pt-3 border-t border-amber-50 text-xs font-semibold text-amber-800">
-            सरल एवं सुरक्षित आश्रय
+          <div class="p-4 bg-white">
+            <h4 class="font-bold text-stone-900 text-sm font-serif">गौसेवा एवं नंदी संरक्षण</h4>
+            <p class="text-xs text-stone-500 mt-0.5">दैनिक चारा, जल एवं चिकित्सा सेवा</p>
           </div>
         </div>
 
-        <!-- 2. Anna Sewa -->
-        <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition border border-amber-100 flex flex-col justify-between">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl mb-4">
-              <i class="fa-solid fa-bowl-rice"></i>
-            </div>
-            <h3 class="text-lg font-bold text-stone-900 font-serif">अन्न सेवा</h3>
-            <p class="mt-3 text-stone-600 text-xs sm:text-sm leading-relaxed">
-              <strong>"कोई भूखा न सोए"</strong> इसी संकल्प को सामने रखते हुए आश्रम की ओर से नियमित रूप से शुद्ध, सात्विक भोजन और पेयजल की व्यवस्था की जाती है। यह सेवा निष्काम भाव से समर्पित है।
-            </p>
+        <!-- Photo 2: Anna Daan -->
+        <div class="rounded-2xl overflow-hidden border border-amber-200 shadow-sm group bg-amber-50">
+          <div class="h-60 overflow-hidden relative">
+            <img src="annadaan.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full bg-amber-800 flex items-center justify-center text-amber-200\'><i class=\'fa-solid fa-bowl-rice text-5xl\'></i></div>';" alt="अन्न सेवा" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           </div>
-          <div class="mt-4 pt-3 border-t border-amber-50 text-xs font-semibold text-amber-800">
-            नियमित सात्विक भोजन वितरण
+          <div class="p-4 bg-white">
+            <h4 class="font-bold text-stone-900 text-sm font-serif">अन्नक्षेत्र एवं भोजन सेवा</h4>
+            <p class="text-xs text-stone-500 mt-0.5">"कोई भूखा न सोए" नियमित सात्विक भोजन</p>
           </div>
         </div>
 
-        <!-- 3. Swasthya Sewa -->
-        <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition border border-amber-100 flex flex-col justify-between">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl mb-4">
-              <i class="fa-solid fa-stethoscope"></i>
-            </div>
-            <h3 class="text-lg font-bold text-stone-900 font-serif">स्वास्थ्य सेवा</h3>
-            <p class="mt-3 text-stone-600 text-xs sm:text-sm leading-relaxed">
-              समाज के जरूरतमंद और गरीब वर्ग के लोगों के लिए स्वास्थ्य ही सबसे बड़ी पूंजी है। इसके लिए आश्रम परिसर में समय-समय पर स्वास्थ्य जाँच शिविर और आवश्यक चिकित्सीय सहायता उपलब्ध कराई जाती है।
-            </p>
+        <!-- Photo 3: Saint Blessings -->
+        <div class="rounded-2xl overflow-hidden border border-amber-200 shadow-sm group bg-amber-50">
+          <div class="h-60 overflow-hidden relative">
+            <img src="saints.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full bg-amber-800 flex items-center justify-center text-amber-200\'><i class=\'fa-solid fa-hands-praying text-5xl\'></i></div>';" alt="संत सान्निध्य" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           </div>
-          <div class="mt-4 pt-3 border-t border-amber-50 text-xs font-semibold text-amber-800">
-            निःशुल्क स्वास्थ्य जाँच शिविर
+          <div class="p-4 bg-white">
+            <h4 class="font-bold text-stone-900 text-sm font-serif">संत सान्निध्य एवं आशीर्वाद</h4>
+            <p class="text-xs text-stone-500 mt-0.5">आध्यात्मिक मार्गदर्शन और सेवा संस्कार</p>
           </div>
         </div>
 
-        <!-- 4. Gau Sewa -->
-        <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition border border-amber-100 flex flex-col justify-between">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl mb-4">
-              <i class="fa-solid fa-cow"></i>
-            </div>
-            <h3 class="text-lg font-bold text-stone-900 font-serif">गौसेवा एवं संरक्षण</h3>
-            <p class="mt-3 text-stone-600 text-xs sm:text-sm leading-relaxed">
-              भारतीय संस्कृति और सनातन परंपरा में गौमाता को सर्वोपरि स्थान दिया गया है। वेदायन आश्रम में गौवंश की सेवा, उनका संरक्षण और उनकी उचित देखभाल करना हमारा सबसे प्रमुख और पवित्र कर्तव्य है।
-            </p>
+        <!-- Photo 4: Yatri Niwas -->
+        <div class="rounded-2xl overflow-hidden border border-amber-200 shadow-sm group bg-amber-50">
+          <div class="h-60 overflow-hidden relative">
+            <img src="yatri-niwas.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full bg-amber-800 flex items-center justify-center text-amber-200\'><i class=\'fa-solid fa-hotel text-5xl\'></i></div>';" alt="यात्री निवास" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           </div>
-          <div class="mt-4 pt-3 border-t border-amber-50 text-xs font-semibold text-amber-800">
-            गौवंश की दैनिक सेवा व सुरक्षा
+          <div class="p-4 bg-white">
+            <h4 class="font-bold text-stone-900 text-sm font-serif">यात्री एवं संत निवास</h4>
+            <p class="text-xs text-stone-500 mt-0.5">आगंतुकों के लिए शांत व स्वच्छ आवास</p>
+          </div>
+        </div>
+
+        <!-- Photo 5: Health Camp -->
+        <div class="rounded-2xl overflow-hidden border border-amber-200 shadow-sm group bg-amber-50">
+          <div class="h-60 overflow-hidden relative">
+            <img src="medical-camp.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full bg-amber-800 flex items-center justify-center text-amber-200\'><i class=\'fa-solid fa-stethoscope text-5xl\'></i></div>';" alt="स्वास्थ्य शिविर" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-4 bg-white">
+            <h4 class="font-bold text-stone-900 text-sm font-serif">निःशुल्क स्वास्थ्य शिविर</h4>
+            <p class="text-xs text-stone-500 mt-0.5">गरीबों व असहायों हेतु प्राथमिक जाँच व दवा</p>
+          </div>
+        </div>
+
+        <!-- Photo 6: Construction Work -->
+        <div class="rounded-2xl overflow-hidden border border-amber-200 shadow-sm group bg-amber-50">
+          <div class="h-60 overflow-hidden relative">
+            <img src="construction-site.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full bg-amber-800 flex items-center justify-center text-amber-200\'><i class=\'fa-solid fa-trowel-bricks text-5xl\'></i></div>';" alt="आश्रम निर्माण" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-4 bg-white">
+            <h4 class="font-bold text-stone-900 text-sm font-serif">100 करोड़ आश्रम निर्माण कार्य</h4>
+            <p class="text-xs text-stone-500 mt-0.5">भूमि विकास, मुख्य भवन व गौशाला शेड</p>
           </div>
         </div>
 
       </div>
+
     </div>
   </section>
 
   <!-- ================= 100 CR ASHRAM CONSTRUCTION PROJECT ================= -->
-  <section id="construction" class="py-16 sm:py-24 bg-white border-t border-amber-100">
+  <section id="construction" class="py-16 sm:py-24 bg-amber-50/50 border-t border-amber-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-14">
@@ -298,14 +308,14 @@
           प्रारंभिक अनुमानित बजट: ₹100 करोड़
         </h2>
         <p class="mt-3 text-stone-600 text-sm sm:text-base leading-relaxed">
-          वेदायन ट्रस्ट के इस पवित्र और भव्य आश्रम का निर्माण कार्य पूरी पारदर्शिता, दिव्यता और चरणबद्ध तरीके से संपन्न किया जाएगा। आवश्यकता तथा विस्तार के अनुसार इसे आगे बढ़ाया जाएगा।
+          वेदायन ट्रस्ट के इस पवित्र और भव्य आश्रम का निर्माण कार्य पूरी पारदर्शिता, दिव्यता और चरणबद्ध तरीके से संपन्न किया जाएगा।
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
         <!-- Phase 1 -->
-        <div class="bg-amber-50/60 rounded-2xl p-8 border border-amber-200 relative overflow-hidden">
+        <div class="bg-white rounded-2xl p-8 border border-amber-200 shadow-sm">
           <div class="flex items-center gap-3 mb-6">
             <span class="w-10 h-10 rounded-full bg-amber-700 text-white flex items-center justify-center font-bold text-lg">1</span>
             <div>
@@ -333,7 +343,7 @@
         </div>
 
         <!-- Phase 2 -->
-        <div class="bg-amber-50/60 rounded-2xl p-8 border border-amber-200 relative overflow-hidden">
+        <div class="bg-white rounded-2xl p-8 border border-amber-200 shadow-sm">
           <div class="flex items-center gap-3 mb-6">
             <span class="w-10 h-10 rounded-full bg-amber-700 text-white flex items-center justify-center font-bold text-lg">2</span>
             <div>
@@ -397,15 +407,15 @@
               <i class="fa-solid fa-building-columns mr-2"></i> बैंक खाता विवरण (Bank Details)
             </h3>
             <div class="flex justify-between border-b border-white/10 py-1">
-              <span class="text-amber-100">खाता धारक (Account Name):</span>
+              <span class="text-amber-100">खाता धारक:</span>
               <span class="font-bold">VEDAYAN TRUST</span>
             </div>
             <div class="flex justify-between border-b border-white/10 py-1">
-              <span class="text-amber-100">बैंक का नाम (Bank):</span>
+              <span class="text-amber-100">बैंक का नाम:</span>
               <span class="font-bold">State Bank of India</span>
             </div>
             <div class="flex justify-between border-b border-white/10 py-1">
-              <span class="text-amber-100">खाता संख्या (A/C No):</span>
+              <span class="text-amber-100">खाता संख्या:</span>
               <span class="font-mono font-bold tracking-wider">XXXXXXXXXXXX</span>
             </div>
             <div class="flex justify-between border-b border-white/10 py-1">
@@ -413,18 +423,19 @@
               <span class="font-mono font-bold">SBIN00XXXXX</span>
             </div>
             <div class="flex justify-between py-1">
-              <span class="text-amber-100">शाखा (Branch):</span>
+              <span class="text-amber-100">शाखा:</span>
               <span class="font-bold">मुख्य शाखा</span>
             </div>
           </div>
 
-          <!-- QR Code / UPI Details -->
-          <div class="bg-white text-stone-900 p-6 rounded-xl text-center shadow-inner">
+          <!-- REAL QR CODE PHOTO HOLDER -->
+          <div class="bg-white text-stone-900 p-6 rounded-2xl text-center shadow-lg">
             <h4 class="font-bold text-stone-800 text-sm mb-2">UPI द्वारा सीधा सहयोग</h4>
-            <div class="w-40 h-40 mx-auto bg-stone-100 border-2 border-dashed border-amber-400 rounded-lg flex flex-col items-center justify-center p-2 mb-3">
-              <i class="fa-solid fa-qrcode text-6xl text-stone-400 mb-1"></i>
-              <span class="text-[11px] text-stone-500 font-medium">[QR Code Placeholder]</span>
+            
+            <div class="w-44 h-44 mx-auto bg-stone-50 border-2 border-dashed border-amber-400 rounded-xl flex items-center justify-center p-2 mb-3 overflow-hidden">
+              <img src="upi-qr.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center text-stone-400\'><i class=\'fa-solid fa-qrcode text-6xl mb-1\'></i><p class=\'text-[10px]\'>Photo: upi-qr.jpg</p></div>';" alt="वेदायन ट्रस्ट UPI QR Code" class="w-full h-full object-contain">
             </div>
+
             <div class="bg-amber-50 border border-amber-200 py-1.5 px-3 rounded-md text-xs font-mono font-bold text-amber-900 inline-block">
               UPI ID: vedayantrust@upi
             </div>
@@ -544,7 +555,7 @@
           <ul class="space-y-1.5">
             <li><a href="#about" class="hover:text-amber-400">🏠 आश्रम की जानकारी</a></li>
             <li><a href="#founder" class="hover:text-amber-400">📖 मेरा परिचय (संस्थापक: अनिल)</a></li>
-            <li><a href="#services" class="hover:text-amber-400">🤝 सेवा कार्य एवं संकल्प</a></li>
+            <li><a href="#gallery" class="hover:text-amber-400">📸 फोटो गैलरी</a></li>
             <li><a href="#construction" class="hover:text-amber-400">🏗️ 100 करोड़ निर्माण परियोजना</a></li>
           </ul>
         </div>
@@ -552,9 +563,9 @@
         <div>
           <h4 class="text-white font-bold text-sm mb-2">हमारी सेवाएँ</h4>
           <ul class="space-y-1.5">
-            <li><a href="#services" class="hover:text-amber-400">गौसेवा एवं संरक्षण</a></li>
-            <li><a href="#services" class="hover:text-amber-400">अन्न सेवा एवं यात्री निवास</a></li>
-            <li><a href="#services" class="hover:text-amber-400">स्वास्थ्य एवं जन कल्याण</a></li>
+            <li><a href="#gallery" class="hover:text-amber-400">गौसेवा एवं संरक्षण</a></li>
+            <li><a href="#gallery" class="hover:text-amber-400">अन्न सेवा एवं यात्री निवास</a></li>
+            <li><a href="#gallery" class="hover:text-amber-400">स्वास्थ्य एवं जन कल्याण</a></li>
           </ul>
         </div>
 
