@@ -22,7 +22,6 @@
         <!-- Logo & Branding -->
         <a href="#home" class="flex items-center gap-3">
           <div class="w-12 h-12 rounded-full trust-gradient flex items-center justify-center text-white text-2xl shadow-md overflow-hidden">
-            <!-- Logo image ho toh yahan lagayein: <img src="logo.png" class="w-full h-full object-cover"> -->
             <i class="fa-solid fa-hands-holding-child"></i>
           </div>
           <div>
@@ -32,12 +31,15 @@
         </a>
 
         <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-stone-700">
+        <nav class="hidden xl:flex items-center gap-6 text-sm font-semibold text-stone-700">
           <a href="#about" class="hover:text-amber-700 transition">आश्रम परिचय</a>
           <a href="#founder" class="hover:text-amber-700 transition">मेरा परिचय (संस्थापक)</a>
           <a href="#services" class="hover:text-amber-700 transition">सेवा कार्य</a>
-          <a href="#gallery" class="hover:text-amber-700 transition">तस्वीरें (Gallery)</a>
-          <a href="#construction" class="hover:text-amber-700 transition">भव्य निर्माण (100 Cr)</a>
+          <a href="skills.html" class="text-sky-800 hover:text-sky-950 font-bold flex items-center gap-1">
+            <i class="fa-solid fa-graduation-cap"></i> कौशल केंद्र (Skill Academy)
+          </a>
+          <a href="#gallery" class="hover:text-amber-700 transition">तस्वीरें</a>
+          <a href="#construction" class="hover:text-amber-700 transition">100 Cr निर्माण</a>
           <a href="#donate" class="hover:text-amber-700 transition">सहयोग / दान</a>
           <a href="#contact" class="hover:text-amber-700 transition">संपर्क</a>
         </nav>
@@ -50,17 +52,18 @@
         </div>
 
         <!-- Mobile Menu Toggle Button -->
-        <button onclick="toggleMobileMenu()" class="md:hidden text-stone-700 hover:text-amber-800 text-2xl p-2">
+        <button onclick="toggleMobileMenu()" class="xl:hidden text-stone-700 hover:text-amber-800 text-2xl p-2">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
     </div>
 
     <!-- Mobile Navigation Dropdown -->
-    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-amber-100 px-4 pt-2 pb-4 space-y-3 text-sm font-medium">
+    <div id="mobileMenu" class="hidden xl:hidden bg-white border-b border-amber-100 px-4 pt-2 pb-4 space-y-3 text-sm font-medium">
       <a href="#about" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">आश्रम परिचय</a>
       <a href="#founder" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">मेरा परिचय (संस्थापक)</a>
       <a href="#services" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">सेवा कार्य</a>
+      <a href="skills.html" class="block py-1 text-sky-800 font-bold">🎓 कौशल केंद्र (Skill Academy)</a>
       <a href="#gallery" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">तस्वीरें (Gallery)</a>
       <a href="#construction" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">भव्य निर्माण (100 Cr)</a>
       <a href="#donate" onclick="toggleMobileMenu()" class="block py-1 text-stone-700 hover:text-amber-700">सहयोग / दान</a>
@@ -87,8 +90,11 @@
         <a href="#founder" class="bg-amber-500 hover:bg-amber-600 text-stone-950 font-bold px-7 py-3.5 rounded-full shadow-lg transition flex items-center gap-2 text-sm sm:text-base">
           <i class="fa-solid fa-book-open-reader"></i> संस्थापक परिचय पढ़ें
         </a>
-        <a href="#gallery" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-7 py-3.5 rounded-full backdrop-blur transition text-sm sm:text-base">
-          आश्रम की झलकियाँ देखें
+        <a href="skills.html" class="bg-sky-600 hover:bg-sky-500 text-white font-bold px-7 py-3.5 rounded-full shadow-lg transition flex items-center gap-2 text-sm sm:text-base">
+          <i class="fa-solid fa-graduation-cap"></i> कौशल विकास केंद्र
+        </a>
+        <a href="#construction" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-7 py-3.5 rounded-full backdrop-blur transition text-sm sm:text-base">
+          100 करोड़ निर्माण प्रकल्प
         </a>
       </div>
     </div>
@@ -118,9 +124,8 @@
         </div>
 
         <div class="relative">
-          <!-- ABOUT IMAGE CONTAINER -->
           <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-amber-100 bg-amber-900 aspect-4/3 flex items-center justify-center relative group">
-            <img src="ashram-main.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-8 text-white\'><i class=\'fa-solid fa-hands-praying text-6xl text-amber-400 mb-4\'></i><h3 class=\'text-2xl font-serif font-bold\'>वेदायन आश्रम परिसर</h3><p class=\'text-amber-100 text-xs mt-2\'>Photo upload karein: ashram-main.jpg</p></div>';" alt="वेदायन आश्रम" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <img src="ashram-main.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-8 text-white\'><i class=\'fa-solid fa-hands-praying text-6xl text-amber-400 mb-4\'></i><h3 class=\'text-2xl font-serif font-bold\'>वेदायन आश्रम परिसर</h3><p class=\'text-amber-100 text-xs mt-2\'>Photo: ashram-main.jpg</p></div>';" alt="वेदायन आश्रम" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           </div>
         </div>
       </div>
@@ -143,10 +148,7 @@
 
       <div class="bg-white rounded-3xl shadow-xl border border-amber-200 overflow-hidden">
         
-        <!-- Top Banner with Founder Photo -->
         <div class="bg-amber-900 text-amber-100 p-6 sm:p-10 flex flex-col sm:flex-row items-center gap-6 border-b border-amber-800">
-          
-          <!-- FOUNDER PHOTO -->
           <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-amber-400/80 shadow-2xl overflow-hidden shrink-0 bg-amber-950 flex items-center justify-center">
             <img src="anil-founder.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fa-solid fa-user-tie text-5xl text-amber-300\'></i>';" alt="श्री अनिल - संस्थापक" class="w-full h-full object-cover">
           </div>
@@ -162,7 +164,6 @@
 
         <div class="p-6 sm:p-10 space-y-8">
           
-          <!-- Milestone 1 -->
           <div class="flex flex-col sm:flex-row gap-5 items-start">
             <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl shrink-0">
               <i class="fa-solid fa-cow"></i>
@@ -175,7 +176,6 @@
             </div>
           </div>
 
-          <!-- Milestone 2 -->
           <div class="flex flex-col sm:flex-row gap-5 items-start border-t border-amber-100 pt-6">
             <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl shrink-0">
               <i class="fa-solid fa-hands-praying"></i>
@@ -188,7 +188,6 @@
             </div>
           </div>
 
-          <!-- Milestone 3 -->
           <div class="flex flex-col sm:flex-row gap-5 items-start border-t border-amber-100 pt-6">
             <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl shrink-0">
               <i class="fa-solid fa-landmark"></i>
@@ -211,21 +210,110 @@
     </div>
   </section>
 
-  <!-- ================= PHOTO GALLERY SECTION ================= -->
+  <!-- ================= SHORT SKILL ACADEMY BANNER ================= -->
+  <section class="py-12 bg-sky-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="space-y-1 text-center md:text-left">
+        <span class="text-xs font-bold text-sky-300 uppercase tracking-widest">स्वावलंबन प्रकल्प</span>
+        <h3 class="text-2xl font-bold font-serif">वेदायन कौशल विकास केंद्र (Skill Academy)</h3>
+        <p class="text-xs sm:text-sm text-slate-300">युवाओं और महिलाओं के लिए नाममात्र शुल्क पर CCTV, वायरिंग, सिलाई, कंप्यूटर, पार्लर आदि के प्रैक्टिकल कोर्सेज।</p>
+      </div>
+      <a href="skills.html" class="bg-amber-400 hover:bg-amber-300 text-slate-950 px-6 py-3 rounded-full font-bold text-sm shadow transition shrink-0 flex items-center gap-2">
+        कोर्सेज एवं प्रवेश की जानकारी देखें →
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= CORE SERVICES ================= -->
+  <section id="services" class="py-16 sm:py-24 bg-amber-50/50 border-t border-amber-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-amber-800 font-bold text-xs uppercase tracking-widest">निःस्वार्थ सेवा प्रकल्प</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-serif text-stone-900 mt-2">वेदायन आश्रम की प्रमुख सेवाएँ</h2>
+        <p class="mt-3 text-stone-600 text-sm sm:text-base">
+          यह संस्था समाज के हर वर्ग की भलाई के लिए निष्काम भाव से निरंतर कई सेवा कार्य कर रही है:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-amber-100 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-hotel"></i>
+            </div>
+            <h3 class="text-lg font-bold text-stone-900 font-serif">आश्रम एवं यात्री निवास</h3>
+            <p class="mt-3 text-stone-600 text-xs sm:text-sm leading-relaxed">
+              दूर-दराज से आने वाले यात्रियों, संतों और जरूरतमंदों के लिए सुरक्षित, सरल और आरामदायक ठहरने की उत्तम व्यवस्था।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-amber-50 text-xs font-semibold text-amber-800">
+            सरल एवं सुरक्षित आश्रय
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-amber-100 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-bowl-rice"></i>
+            </div>
+            <h3 class="text-lg font-bold text-stone-900 font-serif">अन्न सेवा</h3>
+            <p class="mt-3 text-stone-600 text-xs sm:text-sm leading-relaxed">
+              <strong>"कोई भूखा न सोए"</strong> इसी संकल्प के साथ नियमित शुद्ध व सात्विक भोजन और पेयजल व्यवस्था।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-amber-50 text-xs font-semibold text-amber-800">
+            नियमित सात्विक भोजन वितरण
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-amber-100 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-stethoscope"></i>
+            </div>
+            <h3 class="text-lg font-bold text-stone-900 font-serif">स्वास्थ्य सेवा</h3>
+            <p class="mt-3 text-stone-600 text-xs sm:text-sm leading-relaxed">
+              गरीबों और असहायों के लिए समय-समय पर निःशुल्क स्वास्थ्य जाँच शिविर और चिकित्सीय सहायता।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-amber-50 text-xs font-semibold text-amber-800">
+            निःशुल्क स्वास्थ्य जाँच शिविर
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-amber-100 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-cow"></i>
+            </div>
+            <h3 class="text-lg font-bold text-stone-900 font-serif">गौसेवा एवं संरक्षण</h3>
+            <p class="mt-3 text-stone-600 text-xs sm:text-sm leading-relaxed">
+              भारतीय संस्कृति में गौमाता सर्वोपरि हैं। गौवंश का संरक्षण, सेवा और दैनिक देखभाल हमारा पवित्र कर्तव्य है।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-amber-50 text-xs font-semibold text-amber-800">
+            गौवंश की दैनिक सेवा व सुरक्षा
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PHOTO GALLERY ================= -->
   <section id="gallery" class="py-16 sm:py-24 bg-white border-t border-amber-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-14">
         <span class="text-amber-800 font-bold text-xs uppercase tracking-widest">सेवा और आश्रम की झलकियाँ</span>
         <h2 class="text-3xl sm:text-4xl font-bold font-serif text-stone-900 mt-2">तस्वीरें (Photo Gallery)</h2>
         <p class="mt-3 text-stone-600 text-sm sm:text-base">
-          गौसेवा, अन्नदान, संतों के सान्निध्य एवं आश्रम के पवित्र सेवा कार्यों के कुछ दृश्य:
+          गौसेवा, अन्नदान, संतों के सान्निध्य एवं आश्रम के पवित्र सेवा कार्यों के दृश्य:
         </p>
       </div>
 
-      <!-- 6 Photo Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        <!-- Photo 1: Gau Sewa -->
         <div class="rounded-2xl overflow-hidden border border-amber-200 shadow-sm group bg-amber-50">
           <div class="h-60 overflow-hidden relative">
             <img src="gausewa.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full bg-amber-800 flex items-center justify-center text-amber-200\'><i class=\'fa-solid fa-cow text-5xl\'></i></div>';" alt="गौसेवा आश्रम" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -236,7 +324,6 @@
           </div>
         </div>
 
-        <!-- Photo 2: Anna Daan -->
         <div class="rounded-2xl overflow-hidden border border-amber-200 shadow-sm group bg-amber-50">
           <div class="h-60 overflow-hidden relative">
             <img src="annadaan.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full bg-amber-800 flex items-center justify-center text-amber-200\'><i class=\'fa-solid fa-bowl-rice text-5xl\'></i></div>';" alt="अन्न सेवा" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -247,7 +334,6 @@
           </div>
         </div>
 
-        <!-- Photo 3: Saint Blessings -->
         <div class="rounded-2xl overflow-hidden border border-amber-200 shadow-sm group bg-amber-50">
           <div class="h-60 overflow-hidden relative">
             <img src="saints.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full bg-amber-800 flex items-center justify-center text-amber-200\'><i class=\'fa-solid fa-hands-praying text-5xl\'></i></div>';" alt="संत सान्निध्य" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -258,7 +344,6 @@
           </div>
         </div>
 
-        <!-- Photo 4: Yatri Niwas -->
         <div class="rounded-2xl overflow-hidden border border-amber-200 shadow-sm group bg-amber-50">
           <div class="h-60 overflow-hidden relative">
             <img src="yatri-niwas.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full bg-amber-800 flex items-center justify-center text-amber-200\'><i class=\'fa-solid fa-hotel text-5xl\'></i></div>';" alt="यात्री निवास" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -269,7 +354,6 @@
           </div>
         </div>
 
-        <!-- Photo 5: Health Camp -->
         <div class="rounded-2xl overflow-hidden border border-amber-200 shadow-sm group bg-amber-50">
           <div class="h-60 overflow-hidden relative">
             <img src="medical-camp.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full bg-amber-800 flex items-center justify-center text-amber-200\'><i class=\'fa-solid fa-stethoscope text-5xl\'></i></div>';" alt="स्वास्थ्य शिविर" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -280,7 +364,6 @@
           </div>
         </div>
 
-        <!-- Photo 6: Construction Work -->
         <div class="rounded-2xl overflow-hidden border border-amber-200 shadow-sm group bg-amber-50">
           <div class="h-60 overflow-hidden relative">
             <img src="construction-site.jpg" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full bg-amber-800 flex items-center justify-center text-amber-200\'><i class=\'fa-solid fa-trowel-bricks text-5xl\'></i></div>';" alt="आश्रम निर्माण" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -314,7 +397,6 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        <!-- Phase 1 -->
         <div class="bg-white rounded-2xl p-8 border border-amber-200 shadow-sm">
           <div class="flex items-center gap-3 mb-6">
             <span class="w-10 h-10 rounded-full bg-amber-700 text-white flex items-center justify-center font-bold text-lg">1</span>
@@ -329,20 +411,19 @@
               <i class="fa-solid fa-circle-check text-amber-600 mt-1"></i>
               <div>
                 <strong>भूमि विकास एवं सीमा दीवार:</strong>
-                <p class="text-xs text-stone-600 mt-0.5">विशाल आश्रम परिसर का समतलीकरण, भूमि विकास और बाउंड्री वॉल सुरक्षा व्यवस्था।</p>
+                <p class="text-xs text-stone-600 mt-0.5">विशाल परिसर का समतलीकरण, सुरक्षा दीवार एवं मार्ग निर्माण।</p>
               </div>
             </li>
             <li class="flex items-start gap-3">
               <i class="fa-solid fa-circle-check text-amber-600 mt-1"></i>
               <div>
                 <strong>मुख्य प्रशासनिक भवन:</strong>
-                <p class="text-xs text-stone-600 mt-0.5">स्वागत कक्ष, ट्रस्ट कार्यालय और भारतीय सनातन वास्तुकला से युक्त केंद्रीय भवन।</p>
+                <p class="text-xs text-stone-600 mt-0.5">स्वागत कक्ष, ट्रस्ट कार्यालय और वैदिक वास्तुकला से युक्त केंद्रीय भवन।</p>
               </div>
             </li>
           </ul>
         </div>
 
-        <!-- Phase 2 -->
         <div class="bg-white rounded-2xl p-8 border border-amber-200 shadow-sm">
           <div class="flex items-center gap-3 mb-6">
             <span class="w-10 h-10 rounded-full bg-amber-700 text-white flex items-center justify-center font-bold text-lg">2</span>
@@ -357,21 +438,21 @@
               <i class="fa-solid fa-circle-check text-amber-600 mt-1"></i>
               <div>
                 <strong>संत एवं यात्री निवास:</strong>
-                <p class="text-xs text-stone-600 mt-0.5">आगंतुकों, संतों और श्रद्धालुओं के ठहरने के लिए सर्वसुविधायुक्त शांत और पवित्र कक्ष।</p>
+                <p class="text-xs text-stone-600 mt-0.5">श्रद्धालुओं और संतों के लिए सर्वसुविधायुक्त शांत व पवित्र कक्ष।</p>
               </div>
             </li>
             <li class="flex items-start gap-3">
               <i class="fa-solid fa-circle-check text-amber-600 mt-1"></i>
               <div>
                 <strong>विशाल गौशाला परिसर:</strong>
-                <p class="text-xs text-stone-600 mt-0.5">सैकड़ों गौवंश के संरक्षण, पौष्टिक चारे और उनकी उत्तम देखभाल हेतु आधुनिक शेड।</p>
+                <p class="text-xs text-stone-600 mt-0.5">सैकड़ों गौवंश के संरक्षण, चारे और देखभाल हेतु आधुनिक शेड।</p>
               </div>
             </li>
             <li class="flex items-start gap-3">
               <i class="fa-solid fa-circle-check text-amber-600 mt-1"></i>
               <div>
-                <strong>अन्नक्षेत्र एवं स्वास्थ्य केंद्र:</strong>
-                <p class="text-xs text-stone-600 mt-0.5">विशाल सात्विक भोजन शाला, नियमित अन्नदान वितरण और प्राथमिक चिकित्सा केंद्र।</p>
+                <strong>अन्नक्षेत्र एवं चिकित्सा केंद्र:</strong>
+                <p class="text-xs text-stone-600 mt-0.5">विशाल भोजनशाला और नियमित अन्नदान व स्वास्थ्य सेवा केंद्र।</p>
               </div>
             </li>
           </ul>
@@ -401,7 +482,6 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white/10 rounded-2xl p-6 sm:p-8 backdrop-blur border border-white/20">
           
-          <!-- Bank Details -->
           <div class="space-y-3 text-sm">
             <h3 class="text-lg font-bold text-amber-200 border-b border-white/20 pb-2">
               <i class="fa-solid fa-building-columns mr-2"></i> बैंक खाता विवरण (Bank Details)
@@ -428,7 +508,6 @@
             </div>
           </div>
 
-          <!-- REAL QR CODE PHOTO HOLDER -->
           <div class="bg-white text-stone-900 p-6 rounded-2xl text-center shadow-lg">
             <h4 class="font-bold text-stone-800 text-sm mb-2">UPI द्वारा सीधा सहयोग</h4>
             
@@ -455,12 +534,11 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
         
-        <!-- Contact Info -->
         <div>
           <span class="text-amber-800 font-bold text-xs uppercase tracking-widest block mb-2">संपर्क सूत्र</span>
           <h2 class="text-3xl font-bold font-serif text-stone-900">वेदायन आश्रम से संपर्क करें</h2>
           <p class="mt-3 text-stone-600 text-sm leading-relaxed">
-            आश्रम, यात्री निवास, गौसेवा या निर्माण कार्य में सहयोग के लिए आप सीधे हमसे संपर्क कर सकते हैं।
+            आश्रम, यात्री निवास, गौसेवा या निर्माण कार्य में सहयोग के लिए आप सीधे संपर्क कर सकते हैं।
           </p>
 
           <div class="mt-8 space-y-4 text-sm">
@@ -496,7 +574,6 @@
           </div>
         </div>
 
-        <!-- Contact Form -->
         <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-amber-100">
           <h3 class="text-lg font-bold text-stone-900 mb-4 font-serif">सहयोग या जानकारी हेतु संदेश भेजें</h3>
           <form onsubmit="handleFormSubmit(event)" class="space-y-4 text-sm">
@@ -555,6 +632,7 @@
           <ul class="space-y-1.5">
             <li><a href="#about" class="hover:text-amber-400">🏠 आश्रम की जानकारी</a></li>
             <li><a href="#founder" class="hover:text-amber-400">📖 मेरा परिचय (संस्थापक: अनिल)</a></li>
+            <li><a href="skills.html" class="text-sky-300 hover:text-sky-200 font-semibold">🎓 कौशल विकास केंद्र (अलग पेज)</a></li>
             <li><a href="#gallery" class="hover:text-amber-400">📸 फोटो गैलरी</a></li>
             <li><a href="#construction" class="hover:text-amber-400">🏗️ 100 करोड़ निर्माण परियोजना</a></li>
           </ul>
@@ -563,9 +641,9 @@
         <div>
           <h4 class="text-white font-bold text-sm mb-2">हमारी सेवाएँ</h4>
           <ul class="space-y-1.5">
-            <li><a href="#gallery" class="hover:text-amber-400">गौसेवा एवं संरक्षण</a></li>
-            <li><a href="#gallery" class="hover:text-amber-400">अन्न सेवा एवं यात्री निवास</a></li>
-            <li><a href="#gallery" class="hover:text-amber-400">स्वास्थ्य एवं जन कल्याण</a></li>
+            <li><a href="#services" class="hover:text-amber-400">गौसेवा एवं संरक्षण</a></li>
+            <li><a href="#services" class="hover:text-amber-400">अन्न सेवा एवं यात्री निवास</a></li>
+            <li><a href="#services" class="hover:text-amber-400">स्वास्थ्य एवं जन कल्याण</a></li>
           </ul>
         </div>
 
@@ -584,7 +662,6 @@
     </div>
   </footer>
 
-  <!-- ================= SCRIPT ================= -->
   <script>
     function toggleMobileMenu() {
       const menu = document.getElementById('mobileMenu');
